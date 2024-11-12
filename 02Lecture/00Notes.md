@@ -2,21 +2,20 @@
 
 > Once the React app is created, it comes with a predefined folder structure. Here's a breakdown of the folders and files:
 
-graphql
-Copy code
+
 my-app/
 ├── node_modules/       # Contains all project dependencies
 ├── public/
-│   ├── index.html      # The HTML template that React injects content into
 │   └── favicon.ico     # The app's favicon
 ├── src/
 │   ├── assets/         # Static files like images, fonts, etc.
 │   ├── components/     # Reusable React components
-│   ├── App.js          # The main app component
-│   ├── App.css         # The CSS file for App.js
-│   ├── index.js        # The entry point of the React app
+│   ├── App.jsx         # The main app component
+│   ├── App.css         # The CSS file for App.jsx
+│   ├── main.jsx        # The entry point of the React app
 │   └── index.css       # Global styles
 ├── .gitignore          # Specifies which files to ignore in version control
+|── index.html          # The HTML template that React injects content into
 ├── package.json        # Manages project dependencies, scripts, and metadata
 └── README.md           # Project documentation file
 
