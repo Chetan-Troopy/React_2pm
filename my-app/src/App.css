@@ -2,3 +2,7 @@ h1{
     background-color: black;
     color: aliceblue;
 }
+
+.slider img {
+    height: 500px;
+}
