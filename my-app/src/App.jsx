@@ -2,6 +2,7 @@ import React from "react";
 import NavbarNew from "./components/webpage/NavbarNew";
 import Slider from "./components/webpage/Slider";
 import CardBody from "./components/webpage/CardBody";
+import ParentCompo from "./components/functionComponent/ParentCompo";
 // import GreetInClass from "./components/classComponent/GreetInClass";
 // import GreetInFunction from "./components/functionComponent/GreetInFunction";
 // import Navbar from "./components/functionComponent/Navbar";
@@ -10,6 +11,12 @@ function App() {
   return (
     // Fragement
     <>
+
+
+    {/* Props Understanding  */}
+
+
+    {/* <ParentCompo/> */}
 
       <NavbarNew/>
       <Slider/>
