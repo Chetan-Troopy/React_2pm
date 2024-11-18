@@ -3,6 +3,7 @@ import NavbarNew from "./components/webpage/NavbarNew";
 import Slider from "./components/webpage/Slider";
 import CardBody from "./components/webpage/CardBody";
 import ParentCompo from "./components/functionComponent/ParentCompo";
+import UnderstandingStyleInReact from "./components/StyleInReact/UnderstandingStyleInReact";
 // import GreetInClass from "./components/classComponent/GreetInClass";
 // import GreetInFunction from "./components/functionComponent/GreetInFunction";
 // import Navbar from "./components/functionComponent/Navbar";
@@ -12,15 +13,19 @@ function App() {
     // Fragement
     <>
 
+    {/* Style In React  */}
+
+    <h1 className="text-center text-bg-dark py-3">Style In React</h1>
+    <UnderstandingStyleInReact/>
 
     {/* Props Understanding  */}
 
 
     {/* <ParentCompo/> */}
 
-      <NavbarNew/>
+      {/* <NavbarNew/>
       <Slider/>
-    <CardBody/>
+    <CardBody/> */}
 
       {/* <Navbar />
       <div className="container text-center fw-bold">
