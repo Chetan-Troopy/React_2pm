@@ -10,9 +10,11 @@ function ExampleCompo() {
             </div>
             <div className="row">
                 <div className="col-6">
-                    <Link to="/example/FundamentalMenu">Fundamentals Of React</Link>
+                    <Link to="/examples/fundamentals">Fundamentals Of React</Link>
                 </div>
-                <div className="col-6">Hooks</div>
+                <div className="col-6">
+                <Link to="/examples/hooks">Hooks In React</Link>
+                </div>
             </div>
 
 

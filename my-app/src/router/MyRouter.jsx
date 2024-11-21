@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import ExampleCompo from "../example/ExampleCompo";
-import FundamentalMenu from "../pages/fundamental/RoutingInReact/FundamentalMenu";
+import ExampleCompo from "../pages/ExampleCompo";
+import FundamentalRoute from "../examples/fundamentals/FundamentalRoutes";
+import HooksRoute from "../examples/hooks/HooksRoute";
 
 const router = createBrowserRouter([
   {
@@ -15,30 +16,40 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <>
-        <Navbar/>
+    element: (
+      <>
+        <Navbar />
         <h2>About</h2>
-    </>,
+      </>
+    ),
   },
   {
     path: "/team",
-    element: <>
-        <Navbar/>
+    element: (
+      <>
+        <Navbar />
         <h2>Team</h2>
-    </>,
+      </>
+    ),
   },
   {
-    path: "/example",
-    element: <>
-        <Navbar/>
-        <ExampleCompo/>
-    </>,
+    path: "/examples",
+    element: (
+      <>
+        <Navbar />
+        <ExampleCompo />
+      </>
+    ),
     children: [
-        {
-            path: "/example/FundamentalMenu",
-            element: <FundamentalMenu/>
-        }
-    ]
+      {
+        path: "fundamentals/*",
+        element: <FundamentalRoute/>
+      },
+      {
+        path: "hooks/*",
+        element: <HooksRoute/>
+      },
+    ],
   },
 ]);
 
