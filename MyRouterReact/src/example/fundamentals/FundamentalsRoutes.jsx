@@ -3,6 +3,8 @@ import { useRoutes } from 'react-router-dom'
 import FundamentalsMenu from './FundamentalsMenu';
 import IntroReact from './IntroReact';
 import UnderstandingProps from './propsInReact/UnderstandingProps';
+import EventsCompo from './EventsInReact/EventsCompo';
+import ConditionInReact from './ConditionalRendering/ConditionInReact';
 
 function FundamentalRoutes() {
   const routes = useRoutes([
@@ -17,6 +19,14 @@ function FundamentalRoutes() {
         {
           path: "understandingProps",
           element: <UnderstandingProps/>
+        },
+        {
+          path: "eventsInReact",
+          element: <EventsCompo/>
+        },
+        {
+          path: "conditionInReact",
+          element: <ConditionInReact/>
         }
       ]
     },

@@ -14,6 +14,12 @@ function FundamentalsMenu() {
                             <li>
                                 <Link to="understandingProps">Props</Link>
                             </li>
+                            <li>
+                                <Link to="eventsInReact">Events</Link>
+                            </li>
+                            <li>
+                                <Link to="conditionInReact">Conditional Rendering</Link>
+                            </li>
                         </ol>
                     </div>
                 </div>
