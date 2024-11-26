@@ -4,11 +4,11 @@ import { Link, Outlet } from 'react-router-dom'
 function ExampleCompo() {
   return (
     <>
-        <div className="container">
+        <div className="container text-bg-dark p-3">
             <h1>Example</h1>
             <div className="row">
                 <div className="col">
-                    <Link to="/example/fundamentals">Fundamental</Link>
+                    <Link className='text-light py-3 text-decoration-none' to="/example/fundamentals">Fundamental</Link>
                 </div>
             </div>
 

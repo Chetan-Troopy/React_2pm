@@ -5,6 +5,7 @@ import IntroReact from './IntroReact';
 import UnderstandingProps from './propsInReact/UnderstandingProps';
 import EventsCompo from './EventsInReact/EventsCompo';
 import ConditionInReact from './ConditionalRendering/ConditionInReact';
+import ListInReact from './RenderingList/ListInReact';
 
 function FundamentalRoutes() {
   const routes = useRoutes([
@@ -27,6 +28,10 @@ function FundamentalRoutes() {
         {
           path: "conditionInReact",
           element: <ConditionInReact/>
+        },
+        {
+          path: "listInReact",
+          element: <ListInReact/>
         }
       ]
     },

@@ -4,21 +4,24 @@ import { Link, Outlet } from 'react-router-dom'
 function FundamentalsMenu() {
   return (
     <>
-            <div className="container">
+            <div className="container text-bg-danger p-3">
                 <div className="row">
                     <div className="col">
                         <ol>
                             <li>
-                                <Link to="introReact">Intro React</Link>
+                                <Link className='text-light' to="introReact">Intro React</Link>
                             </li>
                             <li>
-                                <Link to="understandingProps">Props</Link>
+                                <Link className='text-light' to="understandingProps">Props</Link>
                             </li>
                             <li>
-                                <Link to="eventsInReact">Events</Link>
+                                <Link className='text-light' to="eventsInReact">Events</Link>
                             </li>
                             <li>
-                                <Link to="conditionInReact">Conditional Rendering</Link>
+                                <Link className='text-light' to="conditionInReact">Conditional Rendering</Link>
+                            </li>
+                            <li>
+                                <Link className='text-light' to="listInReact">Rendering List</Link>
                             </li>
                         </ol>
                     </div>
