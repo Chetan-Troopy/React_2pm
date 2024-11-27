@@ -23,6 +23,9 @@ function FundamentalsMenu() {
                             <li>
                                 <Link className='text-light' to="listInReact">Rendering List</Link>
                             </li>
+                            <li>
+                                <Link className='text-light' to="formExplanation">Form In React</Link>
+                            </li>
                         </ol>
                     </div>
                 </div>
