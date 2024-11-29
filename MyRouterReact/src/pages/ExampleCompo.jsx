@@ -10,6 +10,9 @@ function ExampleCompo() {
                 <div className="col">
                     <Link className='text-light py-3 text-decoration-none' to="/example/fundamentals">Fundamental</Link>
                 </div>
+                <div className="col">
+                    <Link className='text-light py-3 text-decoration-none' to="/example/hooks">Hooks</Link>
+                </div>
             </div>
 
             <div className="row">

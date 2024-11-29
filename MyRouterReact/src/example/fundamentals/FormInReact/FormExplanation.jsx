@@ -2,6 +2,7 @@ import React from "react";
 import FormQuestion from "./FormQuestion";
 import FormPracticalTask from "./FormPracticalTask";
 import RegistrationForm from "./RegistrationForm";
+import RegistrationFormOneState from "./RegistrationFormOneState";
 
 function FormExplanation() {
   return (
@@ -147,6 +148,7 @@ function FormExplanation() {
 
         <div className="container text-light bg-danger py-4 my-3">
           <RegistrationForm/>
+          <RegistrationFormOneState/>
         </div>
         <div className="container text-light bg-dark py-4 my-3">
           <FormQuestion />

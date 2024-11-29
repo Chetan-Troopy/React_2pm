@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Navbar from "../Component/Navbar";
 import ExampleCompo from "../pages/ExampleCompo";
 import FundamentalRoutes from "../example/fundamentals/FundamentalsRoutes";
+import HooksRoutes from "../example/hooks/HooksRoute";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         {
             path: "fundamentals/*",
             element: <FundamentalRoutes/>
+        },
+        {
+            path: "hooks/*",
+            element: <HooksRoutes/>
         }
     ]
   },
