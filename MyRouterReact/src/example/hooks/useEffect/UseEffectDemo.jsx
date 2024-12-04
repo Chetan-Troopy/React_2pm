@@ -1,6 +1,7 @@
 import React from "react";
 import CounterEffect from './CounterEffect';
 import DataFetchingComponent from './DataFetchingComponent';
+import DataCounterFetching from "./DataCounterFetching";
 
 
 function UseEffectDemo() {
@@ -11,6 +12,8 @@ function UseEffectDemo() {
         <CounterEffect />
         <hr />
         <DataFetchingComponent />
+        <hr />
+        <DataCounterFetching/>
         <hr />
       </div>
     </>
