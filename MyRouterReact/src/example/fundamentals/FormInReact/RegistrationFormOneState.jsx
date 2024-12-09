@@ -21,6 +21,15 @@ function RegistrationFormOneState() {
 
     // Log the form data to the console
     console.log("Submitted data:", formData);
+
+    // Error
+
+    // if (!email.includes('@')) {
+    //   setError('Please enter a valid email address');
+    //   } else {
+    //   setError('');
+    //   alert('Form submitted');
+    //   }
     
     // Clear the form fields after submission
     setFormData({
@@ -51,6 +60,7 @@ function RegistrationFormOneState() {
                 value={formData.firstName}
                 onChange={handleChange}
               />
+              {/* {error && <p style={{ color: 'red' }}>{error}</p>} */}
             </div>
             <div className="col-6">
               <label className="mb-1 fs-4" htmlFor="lastName">
