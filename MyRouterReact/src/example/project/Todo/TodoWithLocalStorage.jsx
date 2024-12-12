@@ -1,11 +1,25 @@
-import React, { useState } from "react";
-import Weblayout from "./Weblayout";
+import React, { useState, useEffect } from "react";
 
 function TodoList() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
   const [editTask, setEditTask] = useState("");
   const [editingIndex, setEditingIndex] = useState(null);
+
+  // Load tasks from local storage on component mount
+  useEffect(() => {
+    const storedTasks = localStorage.getItem("tasks");
+    if (storedTasks) {
+      setTasks(JSON.parse(storedTasks));
+    }
+  }, []);
+
+  // Save tasks to local storage whenever tasks change
+  useEffect(() => {
+    if (tasks.length > 0) {
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+    }
+  }, [tasks]);
 
   // Task Add
   function handleTaskAdd() {
@@ -20,12 +34,6 @@ function TodoList() {
     const updateTasks = tasks.filter((_, i) => i !== index);
     setTasks(updateTasks);
   }
-
-  // The first argument (_) represents the task itself, 
-  // but it's not used here (hence the underscore is commonly used 
-  // as a placeholder for unused arguments).
-
-
 
   // Edit Task
   function StartEdit(index) {
@@ -113,12 +121,6 @@ function TodoList() {
             <div className="col text-center">No tasks available!</div>
           )}
         </div>
-      </div>
-
-      {/* Web Layout */}
-      <div className="container text-bg-warning mt-4">
-        <h1>Web Layout</h1>
-        <Weblayout />
       </div>
     </>
   );
