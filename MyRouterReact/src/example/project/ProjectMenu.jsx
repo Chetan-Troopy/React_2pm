@@ -11,6 +11,9 @@ function ProjectMenu() {
                             <li>
                                 <Link className='text-light' to="toDoList">To-Do List</Link>
                             </li>
+                            <li>
+                                <Link className='text-light' to="productCatelog">Product Catelog</Link>
+                            </li>
                         
                            
                         </ol>

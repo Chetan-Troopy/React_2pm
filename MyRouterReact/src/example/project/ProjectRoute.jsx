@@ -2,6 +2,7 @@ import React from 'react'
 import { useRoutes } from 'react-router-dom'
 import ProjectMenu from './ProjectMenu';
 import TodoList from './Todo/TodoList';
+import ProductCatelog from './SomeAdditional/ProductCatelog';
 
 
 function ProjectRoutes() {
@@ -13,6 +14,10 @@ function ProjectRoutes() {
         {
           path: "toDoList",
           element: <TodoList/>
+        },
+        {
+          path: "productCatelog",
+          element: <ProductCatelog/>
         },
        
       ]
