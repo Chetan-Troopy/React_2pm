@@ -3,6 +3,8 @@ import { useRoutes } from 'react-router-dom'
 import ProjectMenu from './ProjectMenu';
 import TodoList from './Todo/TodoList';
 import ProductCatelog from './SomeAdditional/ProductCatelog';
+import TodoWithLocalStorage from './Todo/TodoWithLocalStorage';
+import LocalStorageComp from './Todo/LocalStorageComp';
 
 
 function ProjectRoutes() {
@@ -14,6 +16,10 @@ function ProjectRoutes() {
         {
           path: "toDoList",
           element: <TodoList/>
+        },
+        {
+          path: "localStorageComp",
+          element: <LocalStorageComp/>
         },
         {
           path: "productCatelog",

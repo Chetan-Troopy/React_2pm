@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function TodoList() {
+function TodoWithLocalStorage() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
   const [editTask, setEditTask] = useState("");
@@ -95,13 +95,13 @@ function TodoList() {
           </div>
         )}
 
-        {/* Task List */}
+        Task List
         <div className="row mt-4">
           {tasks.length > 0 ? (
             tasks.map((task, index) => (
               <div className="row py-2" key={index}>
-                <div className="col-10">{task.text}</div>
-                <div className="col-2">
+                <div className="col-6">{task.text}</div>
+                <div className="col-6">
                   <button
                     className="btn btn-success me-2"
                     onClick={() => StartEdit(index)}
@@ -126,4 +126,4 @@ function TodoList() {
   );
 }
 
-export default TodoList;
+export default TodoWithLocalStorage;
