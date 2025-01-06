@@ -2,6 +2,7 @@ import React from "react";
 import UseReducerQuestions from "./UseReducerQuestions";
 import UseReducerPracticalTask from "./UseReducerPracticalTask";
 import CounterReducer from "./CounterReducer";
+import FormReducerComp from "./FormReducerComp";
 
 const UseReducerExplanation = () => {
   return (
@@ -30,6 +31,10 @@ const UseReducerExplanation = () => {
 
       <div className="container text-light bg-danger py-4 my-3">
       <CounterReducer/>
+      <div className="col text-bg-dark p-5 mt-5">
+
+      <FormReducerComp/>
+      </div>
         </div>
         <div className="container text-light bg-dark py-4 my-3">
             <UseReducerQuestions/>

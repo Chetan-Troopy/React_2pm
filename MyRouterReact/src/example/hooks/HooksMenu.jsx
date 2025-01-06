@@ -17,6 +17,9 @@ function HooksMenu() {
                             <li>
                                 <Link className='text-light' to="useReducerExplanation">useReducer</Link>
                             </li>
+                            <li>
+                                <Link className='text-light' to="explanationCompuseCallbackuseMemo">useCallback & useMemo</Link>
+                            </li>
                            
                         </ol>
                     </div>

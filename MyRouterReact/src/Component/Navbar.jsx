@@ -19,6 +19,10 @@ function Navbar() {
           <Link className="nav-link" to="/about">About</Link>
         </li>
        
+        <li className="nav-item">
+          <Link className="nav-link" to="/weather">Weather</Link>
+        </li>
+       
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Example

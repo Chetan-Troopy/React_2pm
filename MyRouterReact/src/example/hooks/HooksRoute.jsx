@@ -4,6 +4,7 @@ import UnderstandingState from './useState/UnderstandingState'
 import HooksMenu from './HooksMenu';
 import UseEffectExplanation from './useEffect/UseEffectExplanation'
 import UseReducerExplanation from './useReducer/UseReducerExplanation';
+import ExplanationComp from './useCallbackuseMemo/ExplanationComp';
 
 
 function HooksRoutes() {
@@ -23,6 +24,10 @@ function HooksRoutes() {
         {
           path: "useReducerExplanation",
           element: <UseReducerExplanation/>
+        },
+        {
+          path: "explanationCompuseCallbackuseMemo",
+          element: <ExplanationComp/>
         }
       ]
     },
