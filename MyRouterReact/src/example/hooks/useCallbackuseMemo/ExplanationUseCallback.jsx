@@ -3,7 +3,7 @@ import React from "react";
 function ExplanationUseCallback() {
   return (
     <>
-      <div>
+      <div className="container text-bg-warning py-4">
         <h2>What is useCallback?</h2>
         <p>
           The `useCallback` hook is used to memoize functions. It ensures that a

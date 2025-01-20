@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
+import ChildComponentUseCallback from './ChildComponentUseCallback';
 
 function ExampleUseCallback() {
 
@@ -10,10 +11,10 @@ function ExampleUseCallback() {
     }, []);
   return (
     <>
-     <div>
+     <div className='container py-3 text-bg-dark'>
       <h2>Count: {count}</h2>
       <button onClick={() => setCount(count + 1)}>Increase Count</button>
-      <ChildComponent onClick={handleClick} />
+      <ChildComponentUseCallback onClick={handleClick} />
     </div>
     </>
   )
