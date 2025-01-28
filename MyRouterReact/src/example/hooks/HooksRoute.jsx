@@ -5,6 +5,7 @@ import HooksMenu from './HooksMenu';
 import UseEffectExplanation from './useEffect/UseEffectExplanation'
 import UseReducerExplanation from './useReducer/UseReducerExplanation';
 import ExplanationComp from './useCallbackuseMemo/ExplanationComp';
+import QAComponent from './useContext/QAComponent';
 
 
 function HooksRoutes() {
@@ -28,6 +29,10 @@ function HooksRoutes() {
         {
           path: "explanationCompuseCallbackuseMemo",
           element: <ExplanationComp/>
+        },
+        {
+          path: "qAComponent",
+          element: <QAComponent/>
         }
       ]
     },

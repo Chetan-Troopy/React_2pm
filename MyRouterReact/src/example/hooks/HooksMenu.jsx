@@ -20,6 +20,9 @@ function HooksMenu() {
                             <li>
                                 <Link className='text-light' to="explanationCompuseCallbackuseMemo">useCallback & useMemo</Link>
                             </li>
+                            <li>
+                                <Link className='text-light' to="qAComponent">QA</Link>
+                            </li>
                            
                         </ol>
                     </div>

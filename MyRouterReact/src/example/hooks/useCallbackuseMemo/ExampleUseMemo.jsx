@@ -21,6 +21,9 @@ function ExampleUseMemo() {
         </button>
         <button onClick={() => setCount(count + 1)}>Increase Count</button>
       </div>
+
+
+      
     </>
   );
 }
