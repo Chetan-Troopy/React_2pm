@@ -23,6 +23,9 @@ function HooksMenu() {
                             <li>
                                 <Link className='text-light' to="qAComponent">QA</Link>
                             </li>
+                            <li>
+                                <Link className='text-light' to="explanationUseRef">UseRef</Link>
+                            </li>
                            
                         </ol>
                     </div>

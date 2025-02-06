@@ -6,6 +6,7 @@ import UseEffectExplanation from './useEffect/UseEffectExplanation'
 import UseReducerExplanation from './useReducer/UseReducerExplanation';
 import ExplanationComp from './useCallbackuseMemo/ExplanationComp';
 import QAComponent from './useContext/QAComponent';
+import ExplanationUseRef from './useRef/ExplanationUseRef';
 
 
 function HooksRoutes() {
@@ -33,6 +34,10 @@ function HooksRoutes() {
         {
           path: "qAComponent",
           element: <QAComponent/>
+        },
+        {
+          path: "explanationUseRef",
+          element: <ExplanationUseRef/>
         }
       ]
     },
