@@ -3,6 +3,7 @@ import FocusInput from "./FocusInput";
 import QASectionUseRef from "./QASectionUseRef";
 import PracticalTasksUseRef from "./PracticalTasksUseRef";
 import PreviousState from "./PreviousState";
+import Stopwatch from "./StopWatch";
 
 function ExplanationUseRef() {
   return (
@@ -25,6 +26,9 @@ function ExplanationUseRef() {
         </div>
       <div className="container text-light bg-danger py-4 my-3">
           <PreviousState/>
+        </div>
+      <div className="container text-light bg-danger py-4 my-3">
+          <Stopwatch/>
         </div>
         <div className="container text-light bg-dark py-4 my-3">
           <QASectionUseRef />
